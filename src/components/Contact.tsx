@@ -32,19 +32,19 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="section bg-white">
+    <section id="contact" className="section bg-gray-800">
       <div className="container mx-auto">
-        <h2 className="section-title">Contact Me</h2>
-        <p className="text-lg text-center text-gray-700 max-w-2xl mx-auto mb-12">
-          Have questions or ready to start improving your math skills? Get in touch and let's discuss how I can help you achieve your goals.
+        <h2 className="section-title text-white">Reserve Your Slot</h2>
+        <p className="text-lg text-center text-gray-300 max-w-2xl mx-auto mb-12">
+          Reach out now to check availability for summer 2025 crash courses. Limited slots available.
         </p>
         
         <div className="grid md:grid-cols-2 gap-8">
-          <Card className="p-6 shadow-md">
-            <h3 className="text-xl font-semibold mb-4">Send a Message</h3>
+          <Card className="glass-card p-6">
+            <h3 className="text-xl font-semibold mb-4 text-white">Send a Message</h3>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium mb-1">
+                <label htmlFor="name" className="block text-sm font-medium mb-1 text-gray-200">
                   Your Name
                 </label>
                 <Input
@@ -54,10 +54,11 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   placeholder="Enter your name"
+                  className="bg-white/10 border-white/20 text-white placeholder:text-gray-400"
                 />
               </div>
               <div>
-                <label htmlFor="email" className="block text-sm font-medium mb-1">
+                <label htmlFor="email" className="block text-sm font-medium mb-1 text-gray-200">
                   Email Address
                 </label>
                 <Input
@@ -68,10 +69,11 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   placeholder="Enter your email"
+                  className="bg-white/10 border-white/20 text-white placeholder:text-gray-400"
                 />
               </div>
               <div>
-                <label htmlFor="message" className="block text-sm font-medium mb-1">
+                <label htmlFor="message" className="block text-sm font-medium mb-1 text-gray-200">
                   Message
                 </label>
                 <Textarea
@@ -80,8 +82,9 @@ const Contact = () => {
                   value={formData.message}
                   onChange={handleChange}
                   required
-                  placeholder="What would you like to discuss?"
+                  placeholder="Interested in which subject and grade level?"
                   rows={4}
+                  className="bg-white/10 border-white/20 text-white placeholder:text-gray-400"
                 />
               </div>
               <Button type="submit" className="w-full bg-tutor-purple hover:bg-tutor-darkblue">
@@ -91,42 +94,42 @@ const Contact = () => {
           </Card>
           
           <div className="space-y-6">
-            <Card className="p-6 shadow-md">
+            <Card className="glass-card p-6">
               <div className="flex items-start">
                 <Mail className="h-6 w-6 text-tutor-blue mr-4 mt-1" />
                 <div>
-                  <h3 className="text-lg font-medium mb-1">Email</h3>
-                  <p className="text-gray-600">contact@mathtutor.com</p>
-                  <p className="text-sm text-gray-500 mt-2">
+                  <h3 className="text-lg font-medium mb-1 text-white">Email</h3>
+                  <p className="text-gray-300">contact@ibexcellence.com</p>
+                  <p className="text-sm text-gray-400 mt-2">
                     Email response within 24 hours
                   </p>
                 </div>
               </div>
             </Card>
             
-            <Card className="p-6 shadow-md">
+            <Card className="glass-card p-6">
               <div className="flex items-start">
                 <Phone className="h-6 w-6 text-tutor-blue mr-4 mt-1" />
                 <div>
-                  <h3 className="text-lg font-medium mb-1">Phone</h3>
-                  <p className="text-gray-600">+1 (555) 123-4567</p>
-                  <p className="text-sm text-gray-500 mt-2">
-                    Available Mon-Fri, 9am-6pm
+                  <h3 className="text-lg font-medium mb-1 text-white">WhatsApp</h3>
+                  <p className="text-gray-300">+1 (555) 123-4567</p>
+                  <p className="text-sm text-gray-400 mt-2">
+                    Available Mon-Fri, 10am-6pm
                   </p>
                 </div>
               </div>
             </Card>
             
-            <Card className="p-6 shadow-md bg-tutor-lightgray border-none">
-              <h3 className="text-lg font-medium mb-3">Tutoring Sessions</h3>
-              <ul className="space-y-2">
+            <Card className="glass-card p-6 border-t-4 border-yellow-500 bg-yellow-500/5">
+              <h3 className="text-lg font-medium mb-3 text-white">Summer 2025 Registration</h3>
+              <ul className="space-y-2 text-gray-300">
                 <li className="flex items-start">
                   <div className="mr-2 mt-1 bg-tutor-purple rounded-full p-1">
                     <svg className="h-2 w-2 text-white" fill="currentColor" viewBox="0 0 8 8">
                       <circle cx="4" cy="4" r="3" />
                     </svg>
                   </div>
-                  <span className="text-gray-700">Online via Zoom or Google Meet</span>
+                  <span>Early registration opens January 2025</span>
                 </li>
                 <li className="flex items-start">
                   <div className="mr-2 mt-1 bg-tutor-purple rounded-full p-1">
@@ -134,7 +137,7 @@ const Contact = () => {
                       <circle cx="4" cy="4" r="3" />
                     </svg>
                   </div>
-                  <span className="text-gray-700">Flexible scheduling</span>
+                  <span>Priority given to returning students</span>
                 </li>
                 <li className="flex items-start">
                   <div className="mr-2 mt-1 bg-tutor-purple rounded-full p-1">
@@ -142,7 +145,7 @@ const Contact = () => {
                       <circle cx="4" cy="4" r="3" />
                     </svg>
                   </div>
-                  <span className="text-gray-700">Custom packages available</span>
+                  <span className="font-medium text-yellow-400">Limited seats available - contact now to reserve!</span>
                 </li>
               </ul>
             </Card>

@@ -64,11 +64,11 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				tutor: {
-					blue: '#3B82F6',
-					purple: '#8B5CF6',
-					darkblue: '#1E40AF',
-					lightgray: '#F9FAFB',
-					darkgray: '#374151'
+					blue: '#60A5FA',
+					purple: '#A78BFA',
+					darkblue: '#3B82F6',
+					lightgray: '#1F2937',
+					darkgray: '#111827'
 				}
 			},
 			fontFamily: {
