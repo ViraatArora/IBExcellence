@@ -99,7 +99,7 @@ const Contact = () => {
                 <Mail className="h-6 w-6 text-tutor-blue mr-4 mt-1" />
                 <div>
                   <h3 className="text-lg font-medium mb-1 text-white">Email</h3>
-                  <p className="text-gray-300">contact@ibexcellence.com</p>
+                  <p className="text-gray-300">ibexcellence03@gmail.com</p>
                   <p className="text-sm text-gray-400 mt-2">
                     Email response within 24 hours
                   </p>
@@ -112,7 +112,7 @@ const Contact = () => {
                 <Phone className="h-6 w-6 text-tutor-blue mr-4 mt-1" />
                 <div>
                   <h3 className="text-lg font-medium mb-1 text-white">WhatsApp</h3>
-                  <p className="text-gray-300">+1 (555) 123-4567</p>
+                  <p className="text-gray-300">+91 7982070662</p>
                   <p className="text-sm text-gray-400 mt-2">
                     Available Mon-Fri, 10am-6pm
                   </p>
@@ -129,7 +129,7 @@ const Contact = () => {
                       <circle cx="4" cy="4" r="3" />
                     </svg>
                   </div>
-                  <span>Early registration opens January 2025</span>
+                  <span>Early registration opens last week of May 2025</span>
                 </li>
                 <li className="flex items-start">
                   <div className="mr-2 mt-1 bg-tutor-purple rounded-full p-1">

@@ -48,9 +48,12 @@ const Qualifications = () => {
             <h3 className="text-xl font-semibold mb-4 text-white">Education</h3>
             <div className="space-y-4 text-gray-300">
               <div>
-                <h4 className="font-medium text-tutor-blue">Dual Degree Program (Current)</h4>
-                <p>B.Sc in Economics & Finance - Ashoka University</p>
-                <p>B.Sc in Data Science & Programming - IIT Madras</p>
+                <h4 className="font-medium text-tutor-blue">Ashoka University</h4>
+                <p>B.Sc in Economics & Finance with a minor in Mathematics</p>
+              </div>
+              <div>
+                <h4 className="font-medium text-tutor-blue">IIT Madras</h4>
+                <p>B.Sc in Data Science & Programming</p>
               </div>
             </div>
           </div>
@@ -58,31 +61,10 @@ const Qualifications = () => {
         
         <Card className="glass-card p-6">
           <h3 className="text-xl font-semibold mb-4 text-center text-white">Teaching Experience</h3>
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="text-center">
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-blue-900/50 text-tutor-blue mb-4">
-                <BookOpen className="h-6 w-6" />
-              </div>
-              <h4 className="font-medium mb-2 text-white">3+ Years</h4>
-              <p className="text-gray-300">Experience teaching IB students with proven results</p>
-            </div>
-            <div className="text-center">
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-purple-900/50 text-tutor-purple mb-4">
-                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
-                </svg>
-              </div>
-              <h4 className="font-medium mb-2 text-white">Customized Approach</h4>
-              <p className="text-gray-300">Tailored strategies based on individual learning styles</p>
-            </div>
-            <div className="text-center">
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-blue-900/50 text-tutor-blue mb-4">
-                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-              </div>
-              <h4 className="font-medium mb-2 text-white">Results-Driven</h4>
-              <p className="text-gray-300">90% of students show 1-2 grade level improvement</p>
+          <div className="flex justify-center">
+            <div className="bg-yellow-500/20 border border-yellow-500/50 p-4 rounded-lg text-center max-w-lg">
+              <p className="text-yellow-400 font-bold text-lg mb-2">Book a trial class to help you decide!</p>
+              <p className="text-gray-300">Experience the teaching style and approach before committing to a full course.</p>
             </div>
           </div>
         </Card>
