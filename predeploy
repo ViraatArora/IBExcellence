@@ -1,6 +1,14 @@
-clear
 
+#!/bin/bash
 
+# Ensure the script runs in "strict mode"
+set -e
 
+# Clean up any previous build
+rm -rf dist
 
-clearn
+# Build the application
+echo "Building application..."
+npm run build
+
+echo "Deployment preparation complete!"

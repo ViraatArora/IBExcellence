@@ -1,83 +1,78 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@400;700&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  :root {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
+:root {
+  --tutor-blue: #3b82f6;
+  --tutor-darkblue: #1d4ed8;
+  --tutor-purple: #8b5cf6;
+  --tutor-darkpurple: #7c3aed;
+}
 
-    --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
-    --popover: 240 10% 3.9%;
-    --popover-foreground: 0 0% 98%;
+.section {
+  padding: 4rem 0;
+}
 
-    --primary: 0 0% 98%;
-    --primary-foreground: 240 5.9% 10%;
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
-    --secondary: 240 3.7% 15.9%;
-    --secondary-foreground: 0 0% 98%;
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--tutor-blue);
+  border-radius: 2px;
+}
 
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-    --accent: 240 3.7% 15.9%;
-    --accent-foreground: 0 0% 98%;
+/* Custom colors */
+.bg-tutor-blue {
+  background-color: var(--tutor-blue);
+}
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
+.bg-tutor-darkblue {
+  background-color: var(--tutor-darkblue);
+}
 
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
-    --ring: 240 4.9% 83.9%;
+.bg-tutor-purple {
+  background-color: var(--tutor-purple);
+}
 
-    --radius: 0.5rem;
+.bg-tutor-darkpurple {
+  background-color: var(--tutor-darkpurple);
+}
 
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
+.text-tutor-blue {
+  color: var(--tutor-blue);
+}
 
-  html {
-    scroll-behavior: smooth;
-  }
-
-  body {
-    @apply bg-background text-foreground;
-    font-feature-settings: "rlig" 1, "calt" 1;
-  }
-
-  h1, h2, h3 {
-    @apply font-serif font-bold;
-  }
-
-  .section {
-    @apply py-16 px-4 md:py-24 md:px-6 max-w-6xl mx-auto;
-  }
-
-  .section-title {
-    @apply text-3xl md:text-4xl mb-8 text-center relative pb-4;
-  }
-
-  .section-title::after {
-    content: "";
-    @apply absolute bottom-0 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-tutor-blue mt-2;
-  }
-
-  .neo-blur {
-    @apply backdrop-blur-md bg-black/30 border border-white/10;
-  }
-
-  .glass-card {
-    @apply backdrop-blur-sm bg-white/5 border border-white/10 shadow-lg;
-  }
+.border-tutor-blue {
+  border-color: var(--tutor-blue);
 }
