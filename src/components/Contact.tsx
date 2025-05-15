@@ -6,6 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Card } from "@/components/ui/card";
 import { Mail, Phone } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import WhatsAppButton from "./WhatsAppButton";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -63,8 +64,12 @@ const Contact = () => {
       <div className="container mx-auto">
         <h2 className="section-title text-white">Reserve Your Slot</h2>
         <p className="text-lg text-center text-gray-300 max-w-2xl mx-auto mb-12">
-          Reach out now to check availability for summer 2025 crash courses. Limited slots available.
+          Reach out now to check availability for summer 2025 crash courses.
         </p>
+        
+        <div className="flex justify-center mb-8">
+          <WhatsAppButton className="px-6 py-3 text-lg" />
+        </div>
         
         <div className="grid md:grid-cols-2 gap-8">
           <Card className="glass-card p-6">
@@ -176,7 +181,7 @@ const Contact = () => {
                       <circle cx="4" cy="4" r="3" />
                     </svg>
                   </div>
-                  <span className="font-medium text-yellow-400">Limited seats available - contact now to reserve!</span>
+                  <span className="font-medium text-yellow-400">Contact now to check availability</span>
                 </li>
               </ul>
             </Card>
