@@ -1,12 +1,6 @@
-import { Routes, Route } from 'react-router-dom';
-// … (other imports remain unchanged)
 
-function App() {
-  return (
-    <Routes>
-      {/* your routes here */}
-    </Routes>
-  );
-}
+import { createRoot } from 'react-dom/client'
+import App from './App.tsx'
+import './index.css'
 
-export default App;
+createRoot(document.getElementById("root")!).render(<App />);
