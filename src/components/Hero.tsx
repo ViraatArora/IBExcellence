@@ -12,7 +12,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 py-16 md:py-24 relative z-1">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">
-            Premium IB Math & Science Summer Crash Courses by <span className="text-transparent bg-clip-text bg-gradient-to-r from-tutor-blue to-tutor-purple">Subject Topper</span>
+            Premium IB Math & Science Summer Crash Courses by <span className="text-transparent bg-clip-text bg-gradient-to-r from-tutor-blue to-tutor-purple">7/7 Subject Topper</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-300 mb-8">
             Small group courses (max 3 students) designed for MYP and DP students.
