@@ -2,26 +2,25 @@
 import React from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { GraduationCap, Book, Atom } from "lucide-react";
-import WhatsAppButton from "./WhatsAppButton";
 
 const Subjects = () => {
   const subjects = [
     {
       title: "IB Mathematics",
-      description: "Comprehensive support for MYP and DP students.",
+      description: "Comprehensive support for MYP (grades 8-10) and DP students (Math AA SL and AI SL).",
       icon: <GraduationCap className="h-10 w-10 text-tutor-purple" />,
       levels: [
-        "MYP 2 to MYP 5",
+        "MYP 2 to MYP 5 (Grades 8-10)",
         "DP1 & DP2 Mathematics AA SL",
         "DP1 & DP2 Mathematics AI SL"
       ]
     },
     {
       title: "IB Sciences",
-      description: "Expert tutoring for MYP science subjects.",
+      description: "Expert tutoring for MYP science subjects (grades 8-10).",
       icon: <Atom className="h-10 w-10 text-tutor-purple" />,
       levels: [
-        "MYP 2 to MYP 5",
+        "MYP 2 to MYP 5 (Grades 8-10)",
         "Integrated Sciences",
         "Biology, Chemistry, Physics foundations"
       ]
@@ -63,10 +62,6 @@ const Subjects = () => {
               </CardContent>
             </Card>
           ))}
-        </div>
-        
-        <div className="flex justify-center mt-12">
-          <WhatsAppButton className="px-6 py-3 text-lg" />
         </div>
       </div>
     </section>
