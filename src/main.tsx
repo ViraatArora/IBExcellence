@@ -1,13 +1,12 @@
-import { createRoot } from 'react-dom/client';
-import App from './App.tsx';
-import './index.css';
-import { BrowserRouter } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
+// … (other imports remain unchanged)
 
-// Use a basename for GitHub Pages deployment
-const basename = import.meta.env.PROD ? '/IBExcellence' : '/';
+function App() {
+  return (
+    <Routes>
+      {/* your routes here */}
+    </Routes>
+  );
+}
 
-createRoot(document.getElementById("root")!).render(
-  <BrowserRouter basename={basename}>
-    <App />
-  </BrowserRouter>
-);
+export default App;
