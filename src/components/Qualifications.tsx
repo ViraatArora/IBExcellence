@@ -61,6 +61,9 @@ const Qualifications = () => {
         
         <Card className="glass-card p-6">
           <h3 className="text-xl font-semibold mb-4 text-center text-white">Teaching Experience</h3>
+          <p className="text-center text-gray-300 mb-6">
+            Have taught students from MYP 1 to DP 2, and being a recent student myself, I'm up to date with how IB works.
+          </p>
           <div className="flex justify-center">
             <div className="bg-yellow-500/20 border border-yellow-500/50 p-4 rounded-lg text-center max-w-lg">
               <p className="text-yellow-400 font-bold text-lg mb-2">Book a trial class to help you decide!</p>

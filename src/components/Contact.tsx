@@ -14,21 +14,48 @@ const Contact = () => {
     email: "",
     message: ""
   });
+  const [isSubmitting, setIsSubmitting] = React.useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // In a real scenario, you'd send this data to an API endpoint
-    console.log("Form submitted:", formData);
-    toast({
-      title: "Message Sent",
-      description: "Thank you for your message. I'll get back to you shortly.",
-    });
-    setFormData({ name: "", email: "", message: "" });
+    setIsSubmitting(true);
+    
+    try {
+      // Create form data for the submission
+      const formSubmission = new FormData();
+      formSubmission.append("name", formData.name);
+      formSubmission.append("email", formData.email);
+      formSubmission.append("message", formData.message);
+      formSubmission.append("_subject", "New Inquiry from IB Excellence Website");
+      formSubmission.append("_template", "table");
+      formSubmission.append("_captcha", "false");
+      
+      // Send to FormSubmit which will forward to the specified email
+      await fetch("https://formsubmit.co/ibexcellence03@gmail.com", {
+        method: "POST",
+        body: formSubmission,
+      });
+      
+      toast({
+        title: "Message Sent",
+        description: "Thank you for your message. I'll get back to you shortly.",
+      });
+      
+      setFormData({ name: "", email: "", message: "" });
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Failed to send message. Please try again or contact directly via email.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -87,8 +114,12 @@ const Contact = () => {
                   className="bg-white/10 border-white/20 text-white placeholder:text-gray-400"
                 />
               </div>
-              <Button type="submit" className="w-full bg-tutor-purple hover:bg-tutor-darkblue">
-                Send Message
+              <Button 
+                type="submit" 
+                className="w-full bg-tutor-purple hover:bg-tutor-darkblue"
+                disabled={isSubmitting}
+              >
+                {isSubmitting ? "Sending..." : "Send Message"}
               </Button>
             </form>
           </Card>
