@@ -21,4 +21,13 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  build: {
+    outDir: "dist", // Ensure output directory is set
+    assetsDir: "assets", // Ensure assets are in a specific directory
+    rollupOptions: {
+      output: {
+        manualChunks: undefined, // Disable chunk splitting for simpler deployment
+      },
+    },
+  }
 }));
