@@ -6,19 +6,19 @@ import { Quote } from "lucide-react";
 const Testimonials = () => {
   const testimonials = [
     {
-      quote: "My son was struggling with Math AA SL and was on a 3. After just one summer course, he achieved a 6 in his next assessment. The way complex concepts were broken down made all the difference.",
-      author: "Parent of DP1 Student",
-      subject: "Math AA SL"
+      quote: "My son has been learning from Viraat for the past year and all I can say is — he is an amazing teacher. From making notes to preparing for exams and being super patient, he is excellent at what he does. A very dedicated teacher, which is hard to find nowadays.",
+      author: "Ms. Vidushi",
+      subject: "Parent of student"
     },
     {
-      quote: "The small group format was perfect. I received personal attention while also learning from my peers' questions. My MYP science grade improved from a 4 to a 6.",
-      author: "MYP 4 Student",
-      subject: "Science"
+      quote: "Viraat Sir is a great tutor who helped me in math and science. Unlike other classes, he makes learning fun, interesting, and entertaining. His dedication really helps students score better marks.",
+      author: "Amay",
+      subject: "MYP 2 Math and Sciences"
     },
     {
       quote: "The critical thinking approach has completely changed how I tackle math problems. I'm not just memorizing formulas anymore but actually understanding why they work.",
-      author: "DP2 Student",
-      subject: "Math AI SL"
+      author: "Reshaan",
+      subject: "MYP 5 Math and Sciences"
     }
   ];
 
