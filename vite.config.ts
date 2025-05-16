@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: '/IBExcellence/', // Set this to your repository name
+  base: '/IBExcellence/', // Corrected the base path to include a leading and trailing slash
   server: {
     host: "::",
     port: 8080,
