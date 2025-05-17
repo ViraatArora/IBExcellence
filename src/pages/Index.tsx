@@ -8,12 +8,19 @@ import TeachingPhilosophy from "@/components/TeachingPhilosophy";
 import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import { Link } from "react-router-dom";
 
 const Index = () => {
   React.useEffect(() => {
     document.title = "IB Excellence | Premium Math & Science Tutoring";
   }, []);
+
+  const scrollToSection = (id: string) => (e: React.MouseEvent) => {
+    e.preventDefault();
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800">
@@ -24,11 +31,11 @@ const Index = () => {
               IB Excellence
             </div>
             <nav className="hidden md:flex space-x-8">
-              <a href="#" className="text-gray-300 hover:text-tutor-blue font-medium">Home</a>
-              <a href="#subjects" className="text-gray-300 hover:text-tutor-blue font-medium">Subjects</a>
-              <a href="#classes" className="text-gray-300 hover:text-tutor-blue font-medium">Classes</a>
-              <a href="#qualifications" className="text-gray-300 hover:text-tutor-blue font-medium">About</a>
-              <a href="#contact" className="text-gray-300 hover:text-tutor-blue font-medium">Contact</a>
+              <a href="#" onClick={scrollToSection('hero')} className="text-gray-300 hover:text-tutor-blue font-medium">Home</a>
+              <a href="#subjects" onClick={scrollToSection('subjects')} className="text-gray-300 hover:text-tutor-blue font-medium">Subjects</a>
+              <a href="#classes" onClick={scrollToSection('classes')} className="text-gray-300 hover:text-tutor-blue font-medium">Classes</a>
+              <a href="#qualifications" onClick={scrollToSection('qualifications')} className="text-gray-300 hover:text-tutor-blue font-medium">About</a>
+              <a href="#contact" onClick={scrollToSection('contact')} className="text-gray-300 hover:text-tutor-blue font-medium">Contact</a>
             </nav>
             <div className="md:hidden">
               <button className="text-gray-300 hover:text-tutor-blue">
@@ -42,13 +49,13 @@ const Index = () => {
       </header>
 
       <main>
-        <Hero />
-        <Subjects />
-        <GroupClasses />
-        <Qualifications />
-        <TeachingPhilosophy />
-        <Testimonials />
-        <Contact />
+        <div id="hero"><Hero /></div>
+        <div id="subjects"><Subjects /></div>
+        <div id="classes"><GroupClasses /></div>
+        <div id="qualifications"><Qualifications /></div>
+        <div id="teaching-philosophy"><TeachingPhilosophy /></div>
+        <div id="testimonials"><Testimonials /></div>
+        <div id="contact"><Contact /></div>
       </main>
       
       <Footer />
