@@ -8,6 +8,7 @@ import TeachingPhilosophy from "@/components/TeachingPhilosophy";
 import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   React.useEffect(() => {
