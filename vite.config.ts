@@ -4,7 +4,7 @@ import path from "path"
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/math-ace-tutor-site/',
+  base: '/IBExcellence/', // Changed to match your GitHub repo name
   build: {
     outDir: 'dist',
     sourcemap: true,
