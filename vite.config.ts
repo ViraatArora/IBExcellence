@@ -2,6 +2,16 @@ import { defineConfig } from "vite"
 import react from "@vitejs/plugin-react-swc"
 import path from "path"
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RLL4BSMG72"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RLL4BSMG72');
+</script>
+
 // https://vitejs.dev/config/
 export default defineConfig({
   base: '/IBExcellence/', // Changed to match your GitHub repo name

@@ -8,6 +8,7 @@ import { Mail, Phone } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import WhatsAppButton from "./WhatsAppButton";
 
+
 const Contact = () => {
   const { toast } = useToast();
   const [formData, setFormData] = React.useState({
