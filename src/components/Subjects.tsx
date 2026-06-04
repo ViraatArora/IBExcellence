@@ -12,8 +12,8 @@ const Subjects = () => {
       icon: <GraduationCap className="h-10 w-10 text-tutor-purple" />,
       levels: [
         "MYP 2 to MYP 5",
-        "DP1 & DP2 Mathematics AA SL",
-        "DP1 & DP2 Mathematics AI SL"
+        "DP1 & DP2 Mathematics AA HL/SL",
+        "DP1 & DP2 Mathematics AI HL/SL"
       ]
     },
     {

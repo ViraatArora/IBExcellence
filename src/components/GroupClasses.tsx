@@ -31,7 +31,7 @@ const GroupClasses = () => {
               </div>
               <div className="flex flex-col items-center text-center p-4 bg-white/5 rounded-lg">
                 <Calendar className="h-10 w-10 text-tutor-blue mb-4" />
-                <h3 className="font-semibold text-lg mb-2">Summer 2025</h3>
+                <h3 className="font-semibold text-lg mb-2">Summer 2026</h3>
                 <p className="text-gray-300">Intensive sessions during June-August school break</p>
               </div>
               <div className="flex flex-col items-center text-center p-4 bg-white/5 rounded-lg">
@@ -73,7 +73,7 @@ const GroupClasses = () => {
         
         <div className="bg-yellow-500/10 p-6 rounded-lg text-center border border-yellow-500/30">
           <h3 className="text-xl font-semibold mb-2 text-yellow-400">Limited Availability</h3>
-          <p className="text-gray-300">Spots fill quickly! Contact now to secure your place in our summer 2025 groups.</p>
+          <p className="text-gray-300">Spots fill quickly! Contact now to secure your place in our summer 2026 groups.</p>
         </div>
       </div>
     </section>
