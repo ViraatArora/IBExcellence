@@ -15,7 +15,7 @@ const Hero = () => {
             Premium IB Math & Science Summer Crash Courses by <span className="text-transparent bg-clip-text bg-gradient-to-r from-tutor-blue to-tutor-purple">7/7 Subject Topper</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-300 mb-8">
-            Small group courses (max 3 students) designed for MYP and DP students.
+            Small group courses (max 5 students) designed for MYP and DP students.
             Elevate your academic performance with structured, focused instruction.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
