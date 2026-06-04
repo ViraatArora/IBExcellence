@@ -22,7 +22,7 @@ const GroupClasses = () => {
               <div className="flex flex-col items-center text-center p-4 bg-white/5 rounded-lg">
                 <Users className="h-10 w-10 text-tutor-blue mb-4" />
                 <h3 className="font-semibold text-lg mb-2">Small Groups</h3>
-                <p className="text-gray-300">Maximum 3 students per group for personalized attention</p>
+                <p className="text-gray-300">Maximum 5 students per group for personalized attention</p>
               </div>
               <div className="flex flex-col items-center text-center p-4 bg-white/5 rounded-lg">
                 <Clock className="h-10 w-10 text-tutor-blue mb-4" />
